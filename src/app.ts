@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-const publicPath = path.resolve(__dirname, '../wwwroot');
-const indexPath = path.resolve(__dirname, '../wwwroot/index.html');
+const publicPath = path.resolve(__dirname, './wwwroot');
+const indexPath = path.resolve(__dirname, './wwwroot/index.html');
 
 // if query not starts with '/api/' string - send file from wwwroot
 app.use(/^(?!\/api\/)/, express.static(publicPath));
