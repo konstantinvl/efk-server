@@ -22,4 +22,4 @@ app.use(/^(?!\/api\/)/, (req, res) => {
 });
 app.use('/api/categories', categories);
 app.use('/api/items', items);
-app.listen(3000, () => console.log('Server started on http://localhost:3000'));
+app.listen('https://konstantinvl-efk.herokuapp.com/', () => console.log('Server started on http://localhost:3000'));
