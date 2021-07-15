@@ -3,9 +3,9 @@
   "private": true,
   "scripts": {
 
-      "start": "node index/app.js",
+      "start": "node app.js",
       "postinstall": "tsc",
-      "watch-node": "nodemon index/app.js",
+      "watch-node": "nodemon app.js",
       "watch-ts": "tsc -w",
       "deploy": "git add . && git commit -m Heroku && git push heroku master",
 
