@@ -4,7 +4,7 @@
   "scripts": {
 
       "start": "node .src/app.ts",
-      "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src",
+      "postinstall": "tsc && mv -i -v wwwroot dist/ && rm -v -rf src",
       "watch-node": "nodemon .src/app.js",
       "watch-ts": "tsc -w",
       "deploy": "git add . && git commit -m Heroku && git push heroku master",
