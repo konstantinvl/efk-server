@@ -22,4 +22,4 @@ const indexPath = path.resolve(__dirname, './wwwroot/index.html');
 });*/
 app.use('/api/categories', categories);
 app.use('/api/items', items);
-app.listen(80, () => console.log('Server started'));
+app.listen(process.env.Port || 80, () => console.log('Server started'));
