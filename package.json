@@ -2,8 +2,13 @@
   "name": "nodejs-demo",
   "private": true,
   "scripts": {
-    "start": "ts-node ./src/app.js",
-    "watch": "nodemon",
+
+      "start": "node dist/index.ts",
+      "postinstall": "tsc",
+      "watch-node": "nodemon dist/index.js",
+      "watch-ts": "tsc -w",
+      "deploy": "git add . && git commit -m Heroku && git push heroku master",
+
     "lint": "eslint src --ext .ts,.js"
   },
   "dependencies": {
