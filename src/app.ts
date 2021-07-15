@@ -22,4 +22,4 @@ const indexPath = path.resolve(__dirname, './wwwroot/index.html');
 });*/
 app.use('/api/categories', categories);
 app.use('/api/items', items);
-//app.listen('https://konstantinvl-efk.herokuapp.com/', () => console.log('Server started on http://localhost:3000'));
+app.listen(80, () => console.log('Server started'));
